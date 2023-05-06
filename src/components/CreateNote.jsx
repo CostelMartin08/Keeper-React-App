@@ -35,13 +35,13 @@ const CreateNote = (props) => {
 
     return (
 
-        <div>
+      
             <form>
                 <input onChange={schimbat} placeholder="Titlu" name="titlu" value={value.titlu} />
                 <textarea onChange={schimbat} placeholder="Adauga" name="continut" value={value.continut} />
                 <button type="submit" onClick={submit}><i class="fa-solid fa-plus"></i></button>
             </form>
-        </div>
+        
     );
 }
 
