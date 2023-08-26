@@ -1,0 +1,36 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin d-flex-center($width){
+    display: flex;
+    flex-direction: column;
+    @include border-radius(7px);
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: $width;
+    margin: 16px;
+
+}
+
+@mixin box-align-left ($width){
+    @include border-radius(7px);
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: $width;
+    margin: 16px;
+    float:left;
+}
+
+
+@mixin box-align-right ($width, $height){
+    position: relative;
+    float: right;
+    width: $width;
+    height: $height;
+
+}
+
+

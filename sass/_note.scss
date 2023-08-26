@@ -1,0 +1,27 @@
+.note {
+    background: $note-color;
+    @include box-align-left(280px);
+
+    h1 {
+        font-size: $title-font;
+        margin-bottom: 6px;
+    }
+
+    p {
+        font-size: $text-font;
+        margin-bottom: 10px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    button {
+        @include box-align-right(36px, 36px);
+        background: transparent;
+        color: $primary-color;
+        border: none;
+        margin-right: 10px;
+        cursor: pointer;
+        outline: none;
+    }
+
+}
